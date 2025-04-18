@@ -7,6 +7,7 @@ A simple and intuitive To-Do list application to help manage your tasks efficien
 - *Edit tasks*: Modify existing tasks if needed.
 - *Delete tasks*: Remove tasks that are no longer necessary.
 - *Mark tasks as completed*: A checkBox is provided to mark your task as complete.
+- Dark-Mode : Can switch between Light Mode and Dark Mode.
 
 ## Removing Tasks
 -For Removing an existing task , swipe to left of the existing task.
