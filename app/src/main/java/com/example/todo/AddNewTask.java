@@ -60,7 +60,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
             String task = bundle.getString("task");
             newTaskTxt.setText(task);
             if (task != null && task.length() > 0) {
-                TaskSaveButton.setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
+                TaskSaveButton.setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryVariant));
             }
         }
 
@@ -88,7 +88,7 @@ public class AddNewTask extends BottomSheetDialogFragment {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (s.length() > 0) {
                     TaskSaveButton.setEnabled(true);
-                    TaskSaveButton.setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
+                    TaskSaveButton.setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
                 } else {
                     TaskSaveButton.setEnabled(false);
                     TaskSaveButton.setTextColor(Color.GRAY);

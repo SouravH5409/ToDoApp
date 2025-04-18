@@ -74,7 +74,7 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
 
         if (dX > 0) {
             icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_edit);
-            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.colorPrimaryDark));
+            background = new ColorDrawable(ContextCompat.getColor(adapter.getContext(), R.color.colorPrimary));
         } else if (dX < 0) {
             icon = ContextCompat.getDrawable(adapter.getContext(), R.drawable.ic_baseline_delete);
             background = new ColorDrawable(Color.RED);

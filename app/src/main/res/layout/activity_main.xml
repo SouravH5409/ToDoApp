@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Tasks"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
@@ -22,10 +22,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/taskText"
-        android:padding="5dp"
+        android:padding="10dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:nestedScrollingEnabled="true"
         />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img1"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_toRightOf="@+id/taskText"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:src="@drawable/themes"-->
+<!--        android:contentDescription="false"/>-->
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/thumb_icon"
+        android:layout_alignTop="@+id/taskText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"/>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fa"
         android:layout_width="wrap_content"
@@ -36,6 +57,10 @@
         android:backgroundTint="@android:color/holo_red_light"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_baseline_add" />
+
+
+
+
 
 
 </RelativeLayout>
